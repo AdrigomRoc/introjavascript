@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Arrays JavaScript</title>
+        <script>
+            var articulos=["zapatos","pantalon","sombrero","calcetines"];
+        </script>
+    </head>
+    <body>
+        <div>
+            <p>JavaScript Arrays</p>
+        </div>
+        <div>
+            <h1>Trabajando con arrays</h1>
+            <script>
+                document.write("<p> El primer articulo es <strong>")
+                document.write(articulos[0]+"</strong></p>");
+                document.write("<p>El ultimo elemento es <strong>");
+                document.write(articulos[articulos.length-1]+"</strong></p>");
+                articulos.unshift("camiseta");
+                document.write("<p> Nuvo articulo del principio: <strong>");
+                document.write(articulos[0]+"</strong></p>");
+                document.write("<p>Agregamos un elemento al final: <strong>");
+                articulos.push(prompt("Introduce el ultimo articulo"));
+                document.write(articulos[articulos.length-1]+"</strong></p>");
+                document.write("<p>"+articulos[0]+"<br/>");
+                document.write(articulos[1]+"<br/>");
+                document.write(articulos[2]+"<br/>");
+                document.write(articulos[3]+"<br/>");
+                document.write(articulos[4]+"<br/>");
+                document.write(articulos[5]+"<br/></p>");
+                alert.write("Borraremos el primer elemento");
+                articulos.shift();
+                document.write("<p>"+articulos[0]+"<br/>");
+                document.write(articulos[1]+"<br/>");
+                document.write(articulos[2]+"<br/>");
+                document.write(articulos[3]+"<br/>");
+                document.write(articulos[4]+"<br/></p>");
+                alert.write("Ahora borraremos el último");
+                articulos.pop();
+                document.write("<p>"+articulos[0]+"<br/>");
+                document.write(articulos[1]+"<br/>");
+                document.write(articulos[2]+"<br/>");
+                document.write(articulos[3]+"<br/></p>");
+
+
+            </script>
+        </div>
+    </body>
+</html>

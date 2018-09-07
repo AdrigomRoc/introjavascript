@@ -3,12 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Start JavaScript</title>
+        <script src="codigo.js"></script>
+        <script src="Jquery/jquery-1.6.3.min.js"></script>
         <script>
-            alert("Hola mundo");
-            
+            $(function(){
+                $("body").hide().fadeIN(2000);
+            });
         </script>
     </head>
     <body>
-
+        <h1>Hola?=</h1>
+        <h1><script>document.write("Dentro del html");</script></h1>
     </body>
 </html>
