@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Condiciones JavaScript</title>
+        
+        <script>
+           var num1=prompt("Introduce el primer numero: ");
+           var num2=prompt("Introduce el segundo numero: ");
+           if(!isNaN(num1) && !isNaN(num2)){
+
+                var operacion=prompt("¿Que operacion desea utilizar?");
+           
+                parseInt(num1);
+                parseInt(num2);
+
+                if(operacion=="suma"){
+                    alert(num1+num2);
+                }else if(operacion=="resta"){
+                    alert(num1-num2);    
+                }else if(operacion=="multiplicación" || operacion=="multiplicacion"){
+                    alert(num1*num2);
+                }else if(operacion=="división" || operacion=="division"){
+                    alert(num1/num2);
+                }else{
+                    alert("El operador no es valido")
+                }
+           }else{
+               alert("Tienen que ser dos numeros")
+           }
+
+        </script>
+    </head>
+    <body>
+       
+    </body>
+</html>

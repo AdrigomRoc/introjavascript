@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bucles JavaScript</title>
+        
+        <script>
+           var contrincante="piedra";
+           var yo=prompt("Que quieres escojer");
+           
+           yo.toLowerCase(); 
+           if(yo!="papel" && yo!="tijera" && yo!="piedra"){
+               alert("Opció no valida");
+           }else if(contrincante==yo){
+                    alert("empate");
+                }else{
+                if((contrincante=="piedra" && yo=="tijera")||(contrincante=="papel" && yo=="piedra")||(contrincante=="tijera" && yo=="papel")){
+                    alert("Has perdido");
+                }else{
+                    alert("has ganado");
+                }
+           }
+        </script>
+    </head>
+    <body>
+       
+    </body>
+</html>
