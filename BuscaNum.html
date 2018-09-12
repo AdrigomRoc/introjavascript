@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Buscar Numero JavaScript</title>
+        
+    </head>
+    <body>
+        <table width="25%" border="0">
+            <tr>
+                <td><label for="textfield"></label>
+                    <input type="text" name="textfield" id="c_mensajes">
+                </td>
+                <td><label for="textfield2"></label>
+                    <input type="text" name="textfield2" id="c_intentos">
+                </td>
+            </tr>
+        </table>
+        <script>
+            var aleatorio=Math.round(Math.random()*100);
+            var numero, intentos;
+            numero=0;
+            intentos=0;
+            var mensaje=document.getElementById("c_mensajes");
+            var intentos_consumidos=document.getElementById("c_intentos");
+            do{
+                numero=prompt("Introduce un numero entre 0 y 100");
+                if(aleatorio>numero){
+                    mensaje.value="Mas alto de "+numero;
+                }
+                if(aleatorio<numero){
+                    mensaje.value="Mas bajo de "+numero;
+                }
+                intentos++;
+                intentos_consumidos.value=intentos;
+            }while (aleatorio!=numero);
+            document.write("Correcto "+intentos+" intentos");
+        </script>
+    </body>
+</html>
