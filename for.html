@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>For JavaScript</title>
+        <script>
+            var trabajadores=new Array();
+            var persona="";
+            var contador="";
+            while(persona!="salir"){
+                persona=prompt("Introduce un trabajador");
+                trabajadores[contador]=persona;
+                contador++;
+            }
+            
+            trabajadores.pop();
+            for(var i=0;i<trabajadores.length;i++){
+                document.write(trabajadores[i]+"<br/>");
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
